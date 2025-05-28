@@ -1,0 +1,17 @@
+/Users/mac/work space /secure-vault-cli/SecureVault/bin/Debug/net8.0/SecureVault
+/Users/mac/work space /secure-vault-cli/SecureVault/bin/Debug/net8.0/SecureVault.deps.json
+/Users/mac/work space /secure-vault-cli/SecureVault/bin/Debug/net8.0/SecureVault.runtimeconfig.json
+/Users/mac/work space /secure-vault-cli/SecureVault/bin/Debug/net8.0/SecureVault.dll
+/Users/mac/work space /secure-vault-cli/SecureVault/bin/Debug/net8.0/SecureVault.pdb
+/Users/mac/work space /secure-vault-cli/SecureVault/bin/Debug/net8.0/VaultSharp.dll
+/Users/mac/work space /secure-vault-cli/SecureVault/obj/Debug/net8.0/SecureVault.csproj.AssemblyReference.cache
+/Users/mac/work space /secure-vault-cli/SecureVault/obj/Debug/net8.0/SecureVault.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mac/work space /secure-vault-cli/SecureVault/obj/Debug/net8.0/SecureVault.AssemblyInfoInputs.cache
+/Users/mac/work space /secure-vault-cli/SecureVault/obj/Debug/net8.0/SecureVault.AssemblyInfo.cs
+/Users/mac/work space /secure-vault-cli/SecureVault/obj/Debug/net8.0/SecureVault.csproj.CoreCompileInputs.cache
+/Users/mac/work space /secure-vault-cli/SecureVault/obj/Debug/net8.0/SecureVa.0D5DC99B.Up2Date
+/Users/mac/work space /secure-vault-cli/SecureVault/obj/Debug/net8.0/SecureVault.dll
+/Users/mac/work space /secure-vault-cli/SecureVault/obj/Debug/net8.0/refint/SecureVault.dll
+/Users/mac/work space /secure-vault-cli/SecureVault/obj/Debug/net8.0/SecureVault.pdb
+/Users/mac/work space /secure-vault-cli/SecureVault/obj/Debug/net8.0/SecureVault.genruntimeconfig.cache
+/Users/mac/work space /secure-vault-cli/SecureVault/obj/Debug/net8.0/ref/SecureVault.dll
