@@ -1,0 +1,7 @@
+/Users/mac/work space /secure-vault-cli/SecureVault.UnitTests/bin/Debug/net8.0/CoverletSourceRootsMapping_SecureVault.UnitTests
+/Users/mac/work space /secure-vault-cli/SecureVault.UnitTests/obj/Debug/net8.0/SecureVault.UnitTests.csproj.AssemblyReference.cache
+/Users/mac/work space /secure-vault-cli/SecureVault.UnitTests/obj/Debug/net8.0/SecureVault.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mac/work space /secure-vault-cli/SecureVault.UnitTests/obj/Debug/net8.0/SecureVault.UnitTests.AssemblyInfoInputs.cache
+/Users/mac/work space /secure-vault-cli/SecureVault.UnitTests/obj/Debug/net8.0/SecureVault.UnitTests.AssemblyInfo.cs
+/Users/mac/work space /secure-vault-cli/SecureVault.UnitTests/obj/Debug/net8.0/SecureVault.UnitTests.csproj.CoreCompileInputs.cache
+/Users/mac/work space /secure-vault-cli/SecureVault.UnitTests/obj/Debug/net8.0/SecureVault.UnitTests.sourcelink.json
