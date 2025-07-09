@@ -4,7 +4,7 @@ using SecureVault.Models;
 
 namespace SecureVault.Services
 {
-    public class VaultClientFactory
+    public static class VaultClientFactory
     {
         public static IVaultClient CreateClient(VaultConfiguration config, string? token = null)
         {

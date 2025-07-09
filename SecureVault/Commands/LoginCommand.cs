@@ -1,22 +1,15 @@
 using Microsoft.Extensions.Logging;
 using SecureVault.Services;
-using SecureVault.Utilities;
 
 namespace SecureVault.Commands
 {
-    public class LoginCommand : ICommand
+    public class LoginCommand(ILogger<LoginCommand> logger, IVaultService vaultService) : ICommand
     {
-        private readonly ILogger<LoginCommand> _logger;
-        private readonly IVaultService _vaultService;
+        private readonly ILogger<LoginCommand> _logger = logger;
+        private readonly IVaultService _vaultService = vaultService;
 
         public string Name => "login";
         public string Description => "Authenticate with Vault using a token";
-
-        public LoginCommand(ILogger<LoginCommand> logger, IVaultService vaultService)
-        {
-            _logger = logger;
-            _vaultService = vaultService;
-        }
 
         public async Task<int> ExecuteAsync(string[] args)
         {

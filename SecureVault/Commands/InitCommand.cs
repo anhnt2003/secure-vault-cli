@@ -4,19 +4,13 @@ using SecureVault.Utilities;
 
 namespace SecureVault.Commands
 {
-    public class InitCommand : ICommand
+    public class InitCommand(ILogger<InitCommand> logger, IVaultService vaultService) : ICommand
     {
-        private readonly ILogger<InitCommand> _logger;
-        private readonly IVaultService _vaultService;
+        private readonly ILogger<InitCommand> _logger = logger;
+        private readonly IVaultService _vaultService = vaultService;
 
         public string Name => "init";
         public string Description => "Initialize Vault with key shares and threshold";
-
-        public InitCommand(ILogger<InitCommand> logger, IVaultService vaultService)
-        {
-            _logger = logger;
-            _vaultService = vaultService;
-        }
 
         public async Task<int> ExecuteAsync(string[] args)
         {

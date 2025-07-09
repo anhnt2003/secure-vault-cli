@@ -8,19 +8,11 @@ using VaultSharp.V1.SystemBackend;
 
 namespace SecureVault.Services
 {
-    public class VaultService : IVaultService
+    public class VaultService(ILogger<VaultService> logger, IConfigurationService configService) : IVaultService
     {
-        private readonly ILogger<VaultService> _logger;
-        private readonly IConfigurationService _configService;
-        private readonly VaultConfiguration _config;
+        private readonly ILogger<VaultService> _logger = logger;
+        private readonly VaultConfiguration _config = configService.GetConfiguration();
         private IVaultClient? _vaultClient;
-
-        public VaultService(ILogger<VaultService> logger, IConfigurationService configService)
-        {
-            _logger = logger;
-            _configService = configService;
-            _config = _configService.GetConfiguration();
-        }
 
         public async Task<InitializationData> InitializeAsync(int secretShares, int secretThreshold)
         {

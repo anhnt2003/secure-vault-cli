@@ -4,19 +4,13 @@ using SecureVault.Utilities;
 
 namespace SecureVault.Commands
 {
-    public class ReadSecretCommand : ICommand
+    public class ReadSecretCommand(ILogger<ReadSecretCommand> logger, IVaultService vaultService) : ICommand
     {
-        private readonly ILogger<ReadSecretCommand> _logger;
-        private readonly IVaultService _vaultService;
+        private readonly ILogger<ReadSecretCommand> _logger = logger;
+        private readonly IVaultService _vaultService = vaultService;
 
         public string Name => "read";
         public string Description => "Read a secret from Vault";
-
-        public ReadSecretCommand(ILogger<ReadSecretCommand> logger, IVaultService vaultService)
-        {
-            _logger = logger;
-            _vaultService = vaultService;
-        }
 
         public async Task<int> ExecuteAsync(string[] args)
         {

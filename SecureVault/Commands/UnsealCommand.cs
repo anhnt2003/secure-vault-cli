@@ -5,21 +5,14 @@ using System.Text.Json;
 
 namespace SecureVault.Commands
 {
-    public class UnsealCommand : ICommand
+    public class UnsealCommand(ILogger<UnsealCommand> logger, IVaultService vaultService, IConfigurationService configService) : ICommand
     {
-        private readonly ILogger<UnsealCommand> _logger;
-        private readonly IVaultService _vaultService;
-        private readonly IConfigurationService _configService;
+        private readonly ILogger<UnsealCommand> _logger = logger;
+        private readonly IVaultService _vaultService = vaultService;
+        private readonly IConfigurationService _configService = configService;
 
         public string Name => "unseal";
         public string Description => "Unseal Vault using stored keys";
-
-        public UnsealCommand(ILogger<UnsealCommand> logger, IVaultService vaultService, IConfigurationService configService)
-        {
-            _logger = logger;
-            _vaultService = vaultService;
-            _configService = configService;
-        }
 
         public async Task<int> ExecuteAsync(string[] args)
         {
